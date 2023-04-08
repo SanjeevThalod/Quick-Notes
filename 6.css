@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    height: 85vh;
+    position: relative;
+    bottom: 45px;
+}
+.aside{
+    padding-top: 32px;
+    width: 25%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main{
+    width: 75%;
+    height: 100vh;
+    border-left: 1px solid silver;
+    box-sizing: border-box;
+    padding: 2%;
+}
+button{
+    margin-top: 16px;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: rgb(41, 99, 84);
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 16px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+.notes-item{
+    width: 85%;
+    height: 80px;
+    margin-top: 8px;
+    border-radius: 6px;
+    background-color: rgb(214, 214, 214);
+    box-sizing: border-box;
+    padding: 1.5%;
+}
+.notes-item:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+.fa-trash{
+    position: relative;
+    float: right;
+    top: -32px;
+    right: 4px;
+    color: rgb(79, 78, 78);
+}
+.fa-trash:hover{
+    color: black;
+}
+#t{
+    font-size: 32px;
+    font-weight: 600;
+    width: 94%;
+    outline: none;
+    border: none;
+}
+#cont{
+    margin-top: 16px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 80%;
+}
+.title{
+    font-weight: 600;
+}
+.fa-bars{
+    position: relative;
+    float: right;
+    font-size: 24px;
+}
+#bar{
+    display: none;
+}
+.respo{
+    padding-top: 32px;
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 12px;
+    margin-top: 8px;
+}
+#fa{
+    font-size: 32px;
+    height: 32px;
+    position: relative;
+    left: 50vw;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    z-index: 1;
+    visibility: hidden;
+}
+#fa:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 680px){
+    .aside{
+        display: none;
+    }
+    #main{
+        width: 100%;
+    }
+    #bar{
+        display: block;
+    }
+}
